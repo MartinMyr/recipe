@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/5da05c8726.js"></script>
     <meta charset="UTF-8">
@@ -10,74 +12,81 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
-    
-    
-    
+
+
+
     <title>Julbordet.se</title>
 </head>
+
 <body>
 
-        <div id="header">
-                <div id="mainlinks">
-                        <a id="logo" href="index.html"><img src="/images/placeholder_logo.png"></a>
-                        <a id="linkRecepies" href="recept.html">Recept</a>
-                        <a id="linkIngredients" href="ingredients.html">Ingredienser</a>
-                        
-                        <form class="form-inline my-2 my-lg-0 " id="login">
-                            <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
-                            <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
-                            <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
-                            <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Logga in</button>
-                            <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Logga ut</button>
-                          </form>
-                        
-                        </div>
-            </div>
+    <div id="header">
+        <div id="mainlinks">
+            <a id="logo" href="index.html">
+                <img src="/images/placeholder_logo.png">
+            </a>
+            <a id="linkRecepies" href="recept.html">Recept</a>
+            <a id="linkIngredients" href="ingredients.html">Ingredienser</a>
 
-        <div id="recipecontainer">    
-            <div id="recipemain">
-                <ul id = "pepparkakorLoop"></ul>
-                <p>Pepparkakor är en klassiker under julen och detta receptet ger fantastiskt goda kakor med smak av kanel, ingefära och kryddnejlikor. Pepparkaksdegen är mjuk och lätt att baka ut.</p>
-                <img src="/images/receptbilder/pepparkakor.jpg">
-            </div>
-            <div id="ingredientlist">
-                    <a href="#" class="btn btn-primary handlaPepparkakor" >Handla dessa varor</a>
-                <h2>Gör så här</h2>
-                <ul>
-                    <li>Blanda farinsockret, sirapen och vattnet i en kastrull. Koka upp blandningen. </li>
-                    <li>Lägg i matfettet och låt det smälta. Tillsätt kryddorna.</li>      
-                    <li> Låt massan kallna utan omrörning.</li>       
-                    <li> Rör i bikarbonaten och mjölet.</li>        
-                    <li>Linda in degen i plastfolie. Låt den stå kallt till nästa dag.</li>        
-                    <li> Sätt ugnen på 175°C.</li>       
-                    <li> Arbeta degen smidig på mjölat bord. Baka en provkaka för att se om degen håller måttet, om kakan flyter så arbeta in lite mer mjöl i degen.</li>       
-                    <li>Kavla ut degen tunt och ta ut kakor med mått. Lägg dem på smord plåt eller på bakplåtspapper. Grädda kakorna mitt i ugnen i 175°C, 6-8 min.</li>        
-                    <li> Låt kakorna svalna på plåten. Förvaras i burk i rumstemperatur eller i frys.</li>                 
-                </ul>
-                
-            </div>
-            <div id="instructions">
+            <form class="form-inline my-2 my-lg-0 " id="login">
+                <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
+                <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
+                <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
+                <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Logga in</button>
+                <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Logga ut</button>
+            </form>
 
-            </div>
+        </div>
+    </div>
 
-        
+    <div id="recipecontainer">
+        <div id="recipemain">
+            <ul id="pepparkakorLoop"></ul>
+            <p>Pepparkakor är en klassiker under julen och detta receptet ger fantastiskt goda kakor med smak av kanel, ingefära
+                och kryddnejlikor. Pepparkaksdegen är mjuk och lätt att baka ut.</p>
+            <img src="/images/receptbilder/pepparkakor.jpg">
+        </div>
+        <div id="ingredientlist">
+            <a href="#" class="btn btn-primary handlaPepparkakor">Handla dessa varor</a>
+            <h2>Gör så här</h2>
+            <ul>
+                <li>Blanda farinsockret, sirapen och vattnet i en kastrull. Koka upp blandningen. </li>
+                <li>Lägg i matfettet och låt det smälta. Tillsätt kryddorna.</li>
+                <li> Låt massan kallna utan omrörning.</li>
+                <li> Rör i bikarbonaten och mjölet.</li>
+                <li>Linda in degen i plastfolie. Låt den stå kallt till nästa dag.</li>
+                <li> Sätt ugnen på 175°C.</li>
+                <li> Arbeta degen smidig på mjölat bord. Baka en provkaka för att se om degen håller måttet, om kakan flyter så
+                    arbeta in lite mer mjöl i degen.</li>
+                <li>Kavla ut degen tunt och ta ut kakor med mått. Lägg dem på smord plåt eller på bakplåtspapper. Grädda kakorna
+                    mitt i ugnen i 175°C, 6-8 min.</li>
+                <li> Låt kakorna svalna på plåten. Förvaras i burk i rumstemperatur eller i frys.</li>
+            </ul>
+
+        </div>
+        <div id="instructions">
 
         </div>
 
 
 
+    </div>
 
 
 
 
 
 
-      
-        <div id="footer">
-            <div w3-include-html="footer.html" id="footermenu"></div>
-        </div>
 
-<script> w3.includeHTML();</script>
-<script src="script.js"></script>
+
+
+
+    <div id="footer">
+        <div w3-include-html="footer.html" id="footermenu"></div>
+    </div>
+
+    <script> w3.includeHTML();</script>
+    <script src="script.js"></script>
 </body>
+
 </html>
