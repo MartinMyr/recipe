@@ -1,0 +1,256 @@
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+/** Banner **/
+
+#container{
+    padding-top: 60px;
+}
+
+#banner {
+    background: url(images/banner.jpg);
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner h2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(58, 161, 58);
+    padding-top: 200px;
+}
+
+
+/** Banner ends **/
+
+
+
+
+/* Header */
+
+#mainlinks {
+    display: flex;    
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 99;
+}
+
+#mainlinks a {
+    padding-left: 50px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#mainlinks img {
+    width: 80px;
+    margin-top: -20px;
+    
+}
+
+#login {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 10px;
+    width: 100%;
+}
+
+#login i {
+    font-size: 25px;
+}
+
+input[type=mail] {
+    width: 10px;
+ }
+
+/* Header end*/
+
+
+
+
+/** Card containers **/
+
+#cardcontainer1 {
+    padding: 40px 40px 0px 40px;
+    background-color: green;
+}
+
+#cardcontainer2 {
+    padding: 40px 40px 40px 40px;
+    background-color: green;
+}
+
+/** Card containers ends **/
+
+
+
+
+/** Footer**/ 
+
+#myFooter {
+    background-color: #ff0000;
+    color: white;
+    padding-top: 30px;
+}
+
+#footercontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#myFooter .row {
+    margin-right: 0px;
+}
+
+.logo, .aboutus {
+    text-align: center;
+
+}
+
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .instagram:hover {
+    color: #bc2a8d;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+
+
+
+/** Footer ends **/
+
+/** Recipies **/
+
+#navigationbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#receptcontainer {
+    padding: 40px 40px 10px 40px;
+}
+
+
+/** Recipies ends **/
+
+
+/** Pepparkakor.html **/
+
+#recipecontainer {
+    padding: 100px;
+    display: flex;
+
+}
+
+#recipemain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recipemain p {
+   
+}
+
+#ingredientlist {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+#recipepicture {
+    border: 2px;
+}
+
+/** Pepparkakor.html ends **/ 
+
+
+/** Ingredient page **/
+
+#main {
+    text-align: center;
+    padding: 10vh;
+}
+
+#main, ul {
+    list-style: none;
+}
+
+/** Ingredient page slutar **/

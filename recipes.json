@@ -1,0 +1,44 @@
+[
+    {
+        "recept": "julskinka",
+        "ingrediens":[ "3kg rimmad julskinka", "8 kryddpepparkorn", "2-3 st lagerblad ", "1 dl svensk senap blandad med skånsk eller Colemans", "2 äggulor ", "2 msk strösocker", "1-2 dl ströbröd " ]
+    },
+    {
+        "recept": "janson",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "kötbullar",
+        "ingrediens": [ "nötfärs", "lök", "ägg", "ströbröd" ]
+
+    },
+    {
+        "recept": "kål",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "rödbetssallad",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "sill",
+        "ingrediens": [ "1 dl ättikssprit, 12 procent", "2 dl strösocker", "3 dl vatten", "10 kryddpepparkorn","5 kryddnejlikor", "3 lagerblad", "1 tsk gula senapsfrön", "2 inläggningssill (420 g)", "2 morötter", "2 rödlökar", "5 dillkvistar" ]
+
+    },
+    {
+        "recept": "prinskorv",
+        "ingrediens":[ "skinka", "spa", "senap", "ströbröd" ]
+    },
+    {
+        "recept": "risalamalta",
+        "ingrediens": [ "potatis", "lök", "grädde", "ansjovis" ]
+
+    },
+    {
+        "recept": "pepparkakor",
+        "ingrediens": [ "4 dl strösocker", "2 dl ljus sirap", "2 dl vatten", "250 g smör", "2 msk kanel", "1 msk mald kardemumma", "1 msk malda kryddnejlikor", "1 msk mald ingefära", "1 msk bikarbonat", "15 dl vetemjöl, + lite till kavlingen", "4 dl florsocker", "1 st äggvita","2 krm ättika, eller pressad citron", "karamellfärg"  ]
+
+    }
+]

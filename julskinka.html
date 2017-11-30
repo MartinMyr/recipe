@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/5da05c8726.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+    
+    
+    
+    <title>Julbordet.se</title>
+</head>
+<body>
+
+        <div id="header">
+                <div id="mainlinks">
+                        <a id="logo" href="index.html"><img src="/images/placeholder_logo.png"></a>
+                        <a id="linkRecepies" href="recept.html">Recept</a>
+                        <a id="linkIngredients" href="ingredients.html">Ingredienser</a>
+                        
+                        <form class="form-inline my-2 my-lg-0 " id="login">
+                            <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
+                            <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
+                            <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
+                            <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Logga in</button>
+                            <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Logga ut</button>
+                          </form>
+                        
+                        </div>
+            </div>
+
+        <div id="recipecontainer">    
+            <div id="recipemain">
+                <ul id = "julskinkaLoop"></ul>
+                <p>Per Mobergs recept på kokt, rimmad julskinka med god senapsgriljering. Ett recept från tv-programmet Vad blir det för mat.</p>
+                <img src="/images/receptbilder/julskinka.jpg">
+            </div>
+            
+            <div id="ingredientlist">
+                    <a href="#" class="btn btn-primary handlaJulskinka" >Handla dessa varor</a>
+                <h2>Gör så här</h2>
+                <ul>
+                    <li>Lägg skinkan i kokande vatten med pepparkornen plus lagerbladen. </li>
+                    <li>Koktiden beräknas ca 1 timme/kilo. Dra ned värmen så det sjuder, ej kokar.</li>      
+                    <li> Låt julskinkan koka i ca 3 timmar. Använd gärna termometer.</li>       
+                    <li> Den tryckes in och bör vara överst, så man ser den. </li>        
+                    <li>Julskinkan är färdig runt 70 grader. </li>        
+                    <li> Ta upp din julskinka och låt den svalna. </li>       
+                    <li> Spara lite svål men ta bort en del. </li>       
+                    <li>Vispa ihop ägg, senap plus socker till en griljering.</li>    
+                    <li>Smeta över svålen, därefter ströbrödet. Ställ in din julskinka i ugnen, 200 grader i ca 5 – 7 minuter. </li>    
+                </ul>
+                
+            </div>
+            <div id="instructions">
+
+            </div>
+
+        
+
+        </div>
+
+
+
+
+
+
+
+
+
+      
+        <div id="footer">
+            <div w3-include-html="footer.html" id="footermenu"></div>
+        </div>
+
+<script> w3.includeHTML();</script>
+<script src="script.js"></script>
+</body>
+</html>
