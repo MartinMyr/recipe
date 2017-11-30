@@ -17,6 +17,7 @@ var password = "password";
 $(document).ready(function () {
     
     status();
+    addToBuy();
     
     function status(){
         if (sessionStorage.ourUser != null) {
@@ -25,6 +26,7 @@ $(document).ready(function () {
             showStartPage();
         }
     };
+
 
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
@@ -40,7 +42,6 @@ $(document).ready(function () {
     
     function recept(){
 
-        addToBuy();
         pepparkakor();
         julskinka();
         janson();
@@ -105,34 +106,36 @@ $(document).ready(function () {
         };
         
 
+//Adderar till inköpslistan
+$(".addPepparkakor").click(function(){
+    pepparkakor();
+});
+$(".addJulskinka").click(function(){
+    julskinka();
+});
+$(".addJanson").click(function(){
+    janson();
+});
+$(".addKottbullar").click(function(){
+    kotbullar();
+});
+$(".addKal").click(function(){
+    kal();
+});
+$(".addRodbetssallad").click(function(){
+    rödbetssallad();
+});
+$(".addSill").click(function(){
+    sill();
+});
+$(".addPrinskorv").click(function(){
+    prinskorv();
+});
+$(".addRisalamalta").click(function(){
+    risalamalta();
+});
 
-        $(".addPepparkakor").click(function(){
-            pepparkakor();
-        });
-        $(".addJulskinka").click(function(){
-            julskinka();
-        });
-        $(".addJanson").click(function(){
-            janson();
-        });
-        $(".addKottbullar").click(function(){
-            kotbullar();
-        });
-        $(".addKal").click(function(){
-            kal();
-        });
-        $(".addRodbetssallad").click(function(){
-            rödbetssallad();
-        });
-        $(".addSill").click(function(){
-            sill();
-        });
-        $(".addPrinskorv").click(function(){
-            prinskorv();
-        });
-        $(".addRisalamalta").click(function(){
-            risalamalta();
-        });
+
 
 function julskinka(){
 
@@ -273,4 +276,6 @@ function pepparkakor(){
             $("#julskinkaLoop").append("<a href='julskinka.html' class='btn btn-primary handlaJulskinka' >Tillbaka" + "</a>" );
         });
     }
+
+
 });
