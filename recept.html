@@ -17,9 +17,25 @@
 </head>
 <body>
 
-        <div id="header">
-                <div w3-include-html="header.html" id="headermenu"></div>
-        </div>
+    <div id="header">
+        
+                        <div id="mainlinks">
+                                <a id="logo" href="index.html"><img src="images/placeholder_logo.png"></a>
+                                <a id="linkRecepies" href="recept.html">Recept</a>
+                                <a id="linkIngredients" href="ingredients.html">Ingredienser</a>
+                                
+                                <form class="form-inline my-2 my-lg-0 " id="login">
+                                    <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
+                                    <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
+                                    <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
+                                    <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Logga in</button>
+                                    <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Logga ut</button>
+                                  </form>
+                                
+                                </div>
+                                
+                        
+                </div>
 
         <div id="container">      
 
@@ -181,7 +197,7 @@
                             K
                         </div>
                         <div class="card-body">
-                                <img src="/image//receptbilder/kottbullar1.jpg">
+                                <img src="/image/receptbilder/kottbullar1.jpg">
                                 <h4 class="card-title">Köttbullar</h4>
                                 <p class="card-text">Recipe description and picture</p>
                                 <a href="#" class="btn btn-primary">Till receptet</a>
@@ -194,13 +210,13 @@
                             L
                         </div>
                         <div class="card-body">
-                                <img src="/images/receptbilder/langkal1.jpg">
+                                <img src="images/receptbilder/langkal1.jpg">
                                 <h4 class="card-title">Långkål</h4>
                                 <p class="card-text">Recipe description and picture</p>
                                 <a href="#" class="btn btn-primary">Till receptet</a>
                         </div>
                         <div class="card-body">
-                                <img src="/images/receptbilder/lutfisk1.jpg">
+                                <img src="images/receptbilder/lutfisk1.jpg">
                                 <h4 class="card-title">Lutfisk</h4>
                                 <p class="card-text">Recipe description and picture</p>
                                 <a href="#" class="btn btn-primary">Till receptet</a>
