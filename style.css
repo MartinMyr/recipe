@@ -14,7 +14,7 @@ body {
 /** Banner **/
 
 #container{
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 #banner {
@@ -44,30 +44,75 @@ body {
 
 
 
-/* Header */
 
-#mainlinks {
+
+/* Navbar */
+
+#navbar {
     display: flex;    
     background-color: #ff0000;
     position: fixed;
     width: 100%;
-    height: 60px;
     top: 0;
     z-index: 99;
+
 }
 
-#mainlinks a {
-    padding-left: 50px;
-    padding-top: 20px;
+.bg-dark, .navbar-dark {
+    background-color: rgb(146, 9, 0) !important;
+}
+
+#navbar a {
     text-decoration: none;
     color: white;
+    
+
+}
+
+#navbar li a:hover {
+    border-bottom: 4px solid rgba(28, 173, 154, 0.68);
+    margin-bottom: -25px;
+    padding-bottom: 22px;
+    
+    
 }
 
 
-#mainlinks img {
-    width: 80px;
-    margin-top: -20px;
+
+#navbarlinks li {
+    padding-left: 80px;
+    font-size: 20px;
+
+}
+
+#logo {
+    display: flex;
     
+}
+
+#userloggedin {
+    padding-right: 30px;
+    font-size: 90px;
+}
+
+
+
+
+
+
+#login {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 10px;
+    width: 100%;
+}
+
+
+#navbarcontainer {
+    display: flex;
+    width: 80%;
+    margin: auto;
 }
 
 #login {
@@ -79,14 +124,15 @@ body {
 }
 
 #login i {
-    font-size: 25px;
+    font-size: 35px;
+    color: white;
 }
 
-input[type=mail] {
-    width: 10px;
- }
 
-/* Header end*/
+/* Navbar end*/
+
+
+
 
 
 
@@ -95,12 +141,12 @@ input[type=mail] {
 
 #cardcontainer1 {
     padding: 40px 40px 0px 40px;
-    background-color: green;
+    background-color: rgb(88, 91, 46);;
 }
 
 #cardcontainer2 {
     padding: 40px 40px 40px 40px;
-    background-color: green;
+    background-color: rgb(88, 91, 46);;
 }
 
 /** Card containers ends **/
@@ -111,7 +157,7 @@ input[type=mail] {
 /** Footer**/ 
 
 #myFooter {
-    background-color: #ff0000;
+    background-color: rgb(146, 9, 0);
     color: white;
     padding-top: 30px;
 }
@@ -254,3 +300,103 @@ input[type=mail] {
 }
 
 /** Ingredient page slutar **/
+
+@media screen and (max-width:1330px) {
+    #navbarcontainer{
+        width: 100%;
+    }
+
+    #navbarlinks li{
+        padding-left: 60px;
+    }
+
+}
+
+@media screen and (max-width: 996px) {
+
+
+
+    #navbarcontainer {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+    
+    }
+       
+    
+    #logo  h2 {
+        width: 10px;
+        font-size: 20px;
+    }
+    #navbarlinks li {
+        padding-left: 2px;
+    }
+
+    .navbar-collapse, .collapse{
+        position: absolute;
+        flex-basis: 0;
+        flex-grow: 0;
+        margin-top: 49px;
+        background-color: rgb(146, 9, 0);
+        left: 0;
+        width: 100%;
+    }
+
+    #login{
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+    #navbarlinks li {
+        
+        padding-right: 10px;
+    }
+
+    #navigationbar{
+        width: 94%;
+        margin: auto;
+    }
+
+    .pagination{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-item{
+        margin-top:10px
+    }
+
+  
+}
+
+@media screen and (max-width: 400px){
+
+    .navbar-toggler {
+        font-size: 0.62rem;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    
+    }
+
+    
+
+
+  
+}

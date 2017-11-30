@@ -17,25 +17,39 @@
 </head>
 <body>
 
-    <div id="header">
-        
-                        <div id="mainlinks">
-                                <a id="logo" href="index.html"><img src="images/placeholder_logo.png"></a>
-                                <a id="linkRecepies" href="recept.html">Recept</a>
-                                <a id="linkIngredients" href="ingredients.html">Ingredienser</a>
-                                
-                                <form class="form-inline my-2 my-lg-0 " id="login">
-                                    <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
-                                    <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
-                                    <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
-                                    <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Logga in</button>
-                                    <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Logga ut</button>
-                                  </form>
-                                
-                                </div>
-                                
-                        
-                </div>
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div id="navbarcontainer">
+          <a id="logo" class="navbar-brand" href="index.html">
+           <h2>Julbordet</h2>
+          </a>
+    
+          <ul id="navbarlinks" class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="recept.html">Recipes
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ingredients.html">Ingrediensers</a>
+              </li>
+            </ul>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            
+            <form class="form-inline my-2 my-lg-0 " id="login">
+                <input class="form-control mr-sm-2 form-control-sm" id="username" type="mail" placeholder="Username" aria-label="mail">
+                <input class="form-control mr-sm-2 form-control-sm" id="password" type="password" placeholder="Password" aria-label="password">
+                <i class="fa fa-user-circle-o" id="userloggedin" aria-hidden="true"></i>
+                <button class="btn btn-success my-2 my-sm-0 btn-sm " id="submit" type="submit">Log in</button>
+                <button class="btn btn-success my-2 my-sm-0 btn-sm" id="logout" type="submit">Log out</button>
+              </form>
+          </div>
+          
+        </div>
+        <button class="btn navbar-toggler btn-sm " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
 
         <div id="container">      
 
