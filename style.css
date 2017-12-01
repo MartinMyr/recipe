@@ -408,6 +408,7 @@ body {
 
 #main, ul {
     list-style: none;
+    margin-left: -40px;
 }
 
 #receptcontainer {
