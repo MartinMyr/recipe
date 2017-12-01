@@ -389,6 +389,11 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    height: 0px;
+}
+
+#ingredientlist h2{
+
 }
 
 
