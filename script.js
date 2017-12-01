@@ -79,9 +79,9 @@ $(document).ready(function () {
 
         var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Å","Ä","Ö"];
         
-          $.each(alphabet, function(i, val){
-              $(".pagination").append("<class='page-item'><a class='page-link'>" + val  + "</a></li" );
-          });
+        $.each(alphabet, function(i, val){
+            $(".pagination").append('<class="page-item"><a class="page-link" href="#'+val+'">' + val + '</a></li>' );
+        });
       };
 
     function showStartPage() {
