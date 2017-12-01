@@ -371,7 +371,7 @@ body {
 /** Pepparkakor.html **/
 
 #recipecontainer {
-    padding: 100px;
+    padding: 150px;
     display: flex;
 
 }
@@ -379,6 +379,8 @@ body {
 #recipemain {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 70px;
 }
 
 #recipemain p {
