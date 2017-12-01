@@ -148,7 +148,7 @@ function julskinka(){
 
     $.each(recipes, function(i, val){
         if(val.recept === "Julskinka" ){
-            $("#julskinkaLoop").append("<h1>" + val.recept  + "</h1>" );
+            $("#h1julLoop").append("<h1>" + val.recept  + "</h1>" );
             $.each(val.ingrediens, function(i, val){
             $("#julskinkaLoop").append("<li>" + val  + "</li>" );
             $(".addJulskinka").hide();
@@ -220,7 +220,7 @@ function sill(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "Sill" ){
-            $("#sillLoop").append("<h1>" + val.recept + "</h1>" );
+            $("#h1sillLoop").append("<h1>" + val.recept + "</h1>" );
             $.each(val.ingrediens, function(i, val){
             $("#sillLoop").append("<li>" + val  + "</li>" );
             $(".addSill").hide();
@@ -265,7 +265,7 @@ function pepparkakor(){
     
     $.each(recipes, function(i, val){
         if(val.recept === "Pepparkakor" ){
-            $("#pepparkakorLoop").append("<h1>" + val.recept  + "</h1>" );
+            $("#h1peppLoop").append("<h1>" + val.recept  + "</h1>" );
             $.each(val.ingrediens, function(i, val){
             $("#pepparkakorLoop").append("<li>" + val  + "</li>" );
             $(".addPepparkakor").hide();
