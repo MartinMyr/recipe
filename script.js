@@ -37,9 +37,8 @@ $(document).ready(function () {
 
     $("#logout").click(function () {
         sessionStorage.removeItem("ourUser");
-        document.getElementById("#logout").onclick = function() {
-            window.location.href = "https://www.google.com";
-          };
+        window.location.href = "https://www.google.com";
+        
         // location.reload();
         showStartPage();
 
@@ -152,6 +151,12 @@ function julskinka(){
             $(".addJulskinka").hide();
         });
         }
+        $("#julskinkaLoop").on('dblclick', 'li', function() {
+            var $entry = $(this);
+            val.ingrediens.splice($entry.index(), 1);
+            $entry.remove();
+            
+       });
     })
 };
 
@@ -166,6 +171,7 @@ function janson(){
             $(".addJanson").hide();
             });
         }    
+        
     })
 };
 function kotbullar(){
@@ -216,7 +222,13 @@ function sill(){
             $("#sillLoop").append("<li>" + val  + "</li>" );
             $(".addSill").hide();
             });
-        }  
+        } 
+        $("#sillLoop").on('dblclick', 'li', function() {
+            var $entry = $(this);
+            val.ingrediens.splice($entry.index(), 1);
+            $entry.remove();
+            
+       }); 
     })
 }
 function prinskorv(){
@@ -256,6 +268,12 @@ function pepparkakor(){
             $(".addPepparkakor").hide();
             });
         }  
+        $("#pepparkakorLoop").on('dblclick', 'li', function() {
+            var $entry = $(this);
+            val.ingrediens.splice($entry.index(), 1);
+            $entry.remove();
+            
+       });
     })
 }
 
