@@ -58,6 +58,7 @@ $(document).ready(function () {
         }
 
     function showMemberPage() {
+        $("#userloggedin").hide();
         $("#submit").hide();
         $("#wlcmLogin").hide();
         $("#username").hide();
@@ -71,6 +72,7 @@ $(document).ready(function () {
         recept();
         compareIngrediens();
         loopAlphabet();
+        
     };
 
     function loopAlphabet(){
