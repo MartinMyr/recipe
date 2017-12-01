@@ -36,8 +36,12 @@ $(document).ready(function () {
 
     $("#logout").click(function () {
         sessionStorage.removeItem("ourUser");
-        location.reload();
+        document.getElementById("#logout").onclick = function() {
+            window.location.href = "https://www.google.com";
+          };
+        // location.reload();
         showStartPage();
+
     });
     
     function recept(){
