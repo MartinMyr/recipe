@@ -7,9 +7,22 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
+#receptbody {
+    background-color: rgb(0, 179, 0);
+}
+
+#main {
+    background-color: rgb(0, 179, 0);
+
+}
+
+#recipecontainer {
+    background-color: rgb(0, 179, 0);
+}
 
 /** Banner **/
 
@@ -65,6 +78,8 @@ body {
 #navbar a {
     text-decoration: none;
     color: white;
+    padding-right: 7px;
+    
     
 
 }
@@ -80,7 +95,7 @@ body {
 
 
 #navbarlinks li {
-    padding-left: 80px;
+    padding-left: 100px;
     font-size: 20px;
 
 }
@@ -88,6 +103,15 @@ body {
 #logo {
     display: flex;
     
+}
+
+#logo img{
+    display: flex;
+    width: 50%;
+    width: 191px;
+    height: 46px;
+    position: relative;
+
 }
 
 #userloggedin {
@@ -140,14 +164,89 @@ body {
 /** Card containers **/
 
 #cardcontainer1 {
-    padding: 40px 40px 0px 40px;
-    background-color: rgb(88, 91, 46);;
+    padding: 40px 40px 40px 40px;
+    background-color: rgb(0, 179, 0);
 }
 
-#cardcontainer2 {
-    padding: 40px 40px 40px 40px;
-    background-color: rgb(88, 91, 46);;
-}
+
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect a.info, .hovereffect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .hovereffect:hover a.info, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
 
 /** Card containers ends **/
 
@@ -160,6 +259,9 @@ body {
     background-color: rgb(146, 9, 0);
     color: white;
     padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 #footercontainer {
@@ -171,10 +273,21 @@ body {
     margin-right: 0px;
 }
 
-.logo, .aboutus {
-    text-align: center;
 
+.logofooter {
+    width: 330px;
+    height: 90px;
 }
+
+
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+
 
 
 #myFooter ul {
@@ -209,12 +322,11 @@ body {
 
 #myFooter .social-networks {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
 }
 
 #myFooter .social-networks a {
-    font-size: 32px;
+    font-size: 40px;
     color: #f9f9f9;
     padding: 10px;
     transition: 0.2s;
@@ -249,9 +361,7 @@ body {
     padding-top: 50px;
 }
 
-#receptcontainer {
-    padding: 40px 40px 10px 40px;
-}
+
 
 
 /** Recipies ends **/
@@ -299,6 +409,29 @@ body {
     list-style: none;
 }
 
+#receptcontainer {
+    padding: 0px 310px 10px 310px
+}
+
+.card-body img {
+    width: 250px;
+    margin-right: 14px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+
+#receptcontainer .card {
+    margin-top: 40px;
+}
+
+.lastrecept {
+    margin-bottom: 40px;
+}
+
 /** Ingredient page slutar **/
 
 @media screen and (max-width:1330px) {
@@ -310,6 +443,20 @@ body {
         padding-left: 60px;
     }
 
+    #receptcontainer {
+        padding: 0px 40px 10px 40px;
+    }
+
+    .logofooter {
+        width: 250px;
+        height: 70px;
+    
+    }
+
+    #logodiv {
+        text-align: center;
+        
+    }
 }
 
 @media screen and (max-width: 996px) {
@@ -330,12 +477,11 @@ body {
     }
        
     
-    #logo  h2 {
-        width: 10px;
-        font-size: 20px;
-    }
+  
     #navbarlinks li {
-        padding-left: 2px;
+        padding-left: 3px;
+        padding-top: 10px;
+        
     }
 
     .navbar-collapse, .collapse{
@@ -359,10 +505,16 @@ body {
         font-size: 16px;
     }
 
-    #navbarlinks li {
-        
-        padding-right: 10px;
-    }
+    
+#navbar li a:hover {
+    border-bottom: 4px solid rgba(28, 173, 154, 0.68);
+    margin-bottom: -25px;
+    padding-bottom: 13px;
+    
+    
+}
+
+
 
     #navigationbar{
         width: 94%;
@@ -379,6 +531,25 @@ body {
         margin-top:10px
     }
 
+    .logofooter {
+        width: 250px;
+        height: 70px;
+        
+    
+    }
+
+    #logodiv {
+        text-align: center;
+    }
+
+    #logo img{
+        width: 117px;
+        height: 40px;
+    
+    
+    }
+
+ 
   
 }
 
@@ -395,8 +566,53 @@ body {
     
     }
 
+    #navbar {
+        
+    }
+
+    .card-body img {
+        width: 250px;
+        border-radius: 10%;
+        border-style: solid;
+        border-width: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #receptcontainer .card {
+        margin-top: 40px;
+    }
+
+    .lastrecept {
+        margin-bottom: 40px;
+    }
+  
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .logofooter {
+        width: 250px;
+        height: 70px;
+    
+    }
+
+    #logodiv {
+        text-align: center;
+       
+    }
+
+    #logo img{
+        width: 117px;
+        height: 40px;
+    
+    
+    }
+
     
 
 
+    
   
 }
