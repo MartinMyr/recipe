@@ -31,8 +31,7 @@ $(document).ready(function () {
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
             sessionStorage.ourUser = user;
-             showMemberPage();
-             recept(); 
+             showMemberPage(); 
         }
     });
 
@@ -256,6 +255,14 @@ function pepparkakor(){
     })
 }
 
+    function remove(){
+        $("#sillLoop").on('dblclick', 'li', function() {
+            var $entry = $(this);
+            val.ingrediens.splice($entry.index(), 1);
+            $entry.remove();
+            console.log("radera klick")
+        });
+    }
 
     function addToBuy(){
         $(".handlaSill").click(function(){
@@ -263,6 +270,9 @@ function pepparkakor(){
             $("#recipecontainer").append("<ul id ='sillLoop'>" + "</ul>" );
             sill();
             $("#sillLoop").append("<a href='sill.html' class='btn btn-primary handlaSill' >Tillbaka" + "</a>" );
+           remove();
+
+          
            
         });
 
@@ -277,7 +287,7 @@ function pepparkakor(){
             $("#recipecontainer").append("<ul id ='julskinkaLoop'>" + "</ul>" );
             julskinka();
             $("#julskinkaLoop").append("<a href='julskinka.html' class='btn btn-primary handlaJulskinka' >Tillbaka" + "</a>" );
-        });
+        });  
     }
 
 
