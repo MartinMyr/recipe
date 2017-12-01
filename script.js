@@ -31,7 +31,9 @@ $(document).ready(function () {
     $("#login").click(function () {
         if ($("#username").val() == user && $("#password").val() == password) {
             sessionStorage.ourUser = user;
-             showMemberPage(); }
+             showMemberPage();
+             recept(); 
+        }
     });
 
     $("#logout").click(function () {
@@ -261,6 +263,7 @@ function pepparkakor(){
             $("#recipecontainer").append("<ul id ='sillLoop'>" + "</ul>" );
             sill();
             $("#sillLoop").append("<a href='sill.html' class='btn btn-primary handlaSill' >Tillbaka" + "</a>" );
+           
         });
 
         $(".handlaPepparkakor").click(function(){
