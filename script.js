@@ -58,7 +58,7 @@ $(document).ready(function () {
         }
 
     function showMemberPage() {
-        $("#userloggedin").hide();
+        $("#userloggedin").show();
         $("#submit").hide();
         $("#wlcmLogin").hide();
         $("#username").hide();
@@ -93,6 +93,7 @@ $(document).ready(function () {
         $("#linkIngredients").hide();
         $("#banner").show();
         $("#wlcmLogin").show();
+        $("#userloggedin").hide();
      };
     
 
