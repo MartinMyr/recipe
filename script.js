@@ -292,6 +292,7 @@ function pepparkakor(){
     function addToBuy(){
         $(".handlaSill").click(function(){
             $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<h1 id ='h1sillLoop'>" + "</h1>" );
             $("#recipecontainer").append("<ul id ='sillLoop'>" + "</ul>" );
             sill();
             $("#sillLoop").append("<a href='sill.html' class='btn btn-primary handlaSill' >Tillbaka" + "</a>" );
@@ -303,12 +304,14 @@ function pepparkakor(){
 
         $(".handlaPepparkakor").click(function(){
             $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<h1 id ='h1peppLoop'>" + "</h1>" );
             $("#recipecontainer").append("<ul id ='pepparkakorLoop'>" + "</ul>" );
             pepparkakor();
             $("#pepparkakorLoop").append("<a href='pepparkakor.html' class='btn btn-primary handlaPepparkakor' >Tillbaka" + "</a>" );
         });
         $(".handlaJulskinka").click(function(){
             $( "#recipecontainer" ).empty();
+            $("#recipecontainer").append("<h1 id ='h1julLoop'>" + "</h1>" );
             $("#recipecontainer").append("<ul id ='julskinkaLoop'>" + "</ul>" );
             julskinka();
             $("#julskinkaLoop").append("<a href='julskinka.html' class='btn btn-primary handlaJulskinka' >Tillbaka" + "</a>" );
