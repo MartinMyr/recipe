@@ -384,7 +384,12 @@ body {
 }
 
 #recipemain p {
+    margin-top: 10px;
    
+}
+
+#recipemain img{
+    margin-top: -15px;
 }
 
 #ingredientlist {
