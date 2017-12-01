@@ -223,6 +223,7 @@ function sill(){
             $("#h1sillLoop").append("<h1>" + val.recept + "</h1>" );
             $.each(val.ingrediens, function(i, val){
             $("#sillLoop").append("<li>" + val  + "</li>" );
+            $("#recipecontainer").append("<h3>" + "Ingredienser" + "</h3>" );
             $(".addSill").hide();
             });
         } 
